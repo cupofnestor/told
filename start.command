@@ -1,4 +1,5 @@
 #!/bin/bash
 PATH=/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin export PATH
-cd `dirname $0`
-grunt serve
+D=`dirname $0`
+cd "$D/app"
+python -m SimpleHTTPServer
