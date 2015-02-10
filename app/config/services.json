@@ -1,0 +1,35 @@
+{
+	"bucket":"http://toldvideo.s3.amazonaws.com/",
+	"gallery":[
+		{
+			"title":"Practitioners",
+			"body":"Why should potential clients trust you with their care?  Why do you practice in your field? Use a video profile to show them who you are, and to answer commonly asked questions. A video series can provide health and nutrition tips as a bonus service to your customers.",
+			"video":"PractitionerProfile.mp4"
+		},
+		{
+			"title":"Artists",
+			"body":"<a>Your process for creating art is unique</a> – so let's show the world what you do! Use a profile video to educate customers on your techniques, and show the love you put into each bowl, scarf, or necklace. An object with a story is much more likely to find a place in someone's home. Tell us about your passion. We’ll do the rest.",
+			"video":"ArtistProfile.mp4"
+		},
+		{
+			"title":"Businesses",
+			"body":"At Told we understand the long hours and challenges that come with running a business. But why do you do what you do? Customers want to connect to your business. Let them in with a profile video of you and your company. <br/> Video can be used to answer commonly asked questions, or provide tips and advice to customers to bring added value to your website and brand.",
+			"video":"BusinessOwnerProfile.mp4"
+		},
+		{
+			"title":"Non-profits",
+			"body":"Why is your group important, and why should a donor support your efforts? These may be questions you answer every day, but a video can do it effectively, every time.<br/>Profile the benefactors of your nonprofit, or show a day in the life of your workers. Let donors in to your world. Show the video at your annual event, or use a short video as a way of saying “thanks” at the end of each fundraising season. Create a series of short character profiles for social media. The options are endless.",
+			"video":"NonProfit.mp4"
+		},
+		{
+			"title":"Schools",
+			"body":"Stay relevant with a weekly video series about news on campus, or tell parents about exciting initiatives happening this semester. Use student and faculty profiles to tell prospective students how great your school is. Or record alumni memories to create an ongoing archive of stories and interviews. The options for video services at a school or university are many – get started with one today!",
+			"video":""
+		},
+		{
+			"title":"Event Coverage",
+			"body":"Why put all that work into planning an event, only to have it forgotten weeks later? We have expandable event coverage services – from recording every detail to filming the highlights throughout the event. A short video can capture the excitement and feel of your event that photos just can't show. Share it on social media for an extra boost to next year's attendance!",
+			"video":"EventCoverage.mp4"
+		}
+	]
+}
