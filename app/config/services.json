@@ -3,12 +3,12 @@
 	"gallery":[
 		{
 			"title":"Practitioners",
-			"body":"Why should potential clients trust you with their care?  Why do you practice in your field? Use a video profile to show them who you are, and to answer commonly asked questions. A video series can provide health and nutrition tips as a bonus service to your customers.",
+			"body":"<ul><li>Why should potential clients trust you with their care?</li> <li>Why do you practice in your field?</li></ul> Use a <strong>video profile</strong> to show them who you are, and to answer commonly asked questions. A video series can provide health and nutrition tips as a bonus service to your customers.",
 			"video":"PractitionerProfile.mp4"
 		},
 		{
 			"title":"Artists",
-			"body":"<a>Your process for creating art is unique</a> – so let's show the world what you do! Use a profile video to educate customers on your techniques, and show the love you put into each bowl, scarf, or necklace. An object with a story is much more likely to find a place in someone's home. Tell us about your passion. We’ll do the rest.",
+			"body":"<a>Your process for creating art is unique</a> – so let's show the world what you do! Use a profile video to educate customers on your techniques, and show the love you put into each bowl, scarf, or necklace. <br/>An object with a story is much more likely to find a place in someone's home. Tell us about your passion. We’ll do the rest.",
 			"video":"ArtistProfile.mp4"
 		},
 		{
