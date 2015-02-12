@@ -67,3 +67,37 @@ app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 		}
 	}
 }]);
+
+app.directive('toldCarousel', ['$http','$sce', function($http, $sce) {
+	return {
+
+		templateUrl: './templates/carousel.html',
+	/*	transclude: true,
+		replace: true, */
+		scope: {
+			src: "="
+		},
+		controller: function($scope) {
+			console.info("enter directive controller");
+			$scope.carousel = [];
+			$scope.getImgSrc = function(img){
+				return $sce.trustAsResourceUrl(img);
+			};
+			$scope.trustHTML = function(html) {
+			          return $sce.trustAsHtml(html);
+			        };
+			console.log("SRC",$scope.src);
+			
+			
+			$http({
+				method: 'GET',
+				url: "./config/"+$scope.src
+			}).then(function(result) {
+				console.log("result",result);
+				$scope.carousel = result.data.carousel;
+			}, function(result) {
+				alert("Error: No data returned");
+			});
+		}
+	}
+}]);

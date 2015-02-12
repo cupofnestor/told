@@ -1,0 +1,21 @@
+{
+	"carousel":[
+		{
+			"image":"./img/brand/1.jpg",
+			"caption":"Wipe that fucking smirk off your face."
+		},
+		{
+			"image":"./img/brand/2.jpg",
+			"caption":"Mmmm....  Beeeeeer."
+		},
+		{
+			"image":"./img/brand/3.jpg",
+			"caption":"Everyone knows that time is Death, that Death hides in clocks."
+		},
+		{
+			"image":"./img/brand/4.jpg",
+			"caption":"I am so fucking smooth..."
+		}
+		
+	]
+}
