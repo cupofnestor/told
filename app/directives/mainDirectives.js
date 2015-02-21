@@ -19,9 +19,9 @@ app.directive('toldAbout', function() {
   };
 });
 
-app.directive('toldServices', function() {
+app.directive('toldSamples', function() {
   return {
-    templateUrl: './templates/services.html'
+    templateUrl: './templates/samples.html'
   };
 });
 
