@@ -1,8 +1,8 @@
-<div  class="brand">Samples</div>
+<div  class="brand">{{config.title}}</div>
 <div class ="row">
 	
-	<div class ="box">
-		<div class = "col-md-4 col-md-offset-0" ng-repeat="item in gallery">
+	<div ng-class ="box_class">
+		<div class = "col-md-4 col-md-offset-0" ng-repeat="item in config.gallery">
 			
 
 			
@@ -31,7 +31,7 @@
 			    </videogular>
 		
 			<h2>{{item.title}}</h2>
-			<hr>
+			<hr ng-hide="!item.title || !item.body">
 			<p ng-bind-html="item.body">
 				
 			</p>

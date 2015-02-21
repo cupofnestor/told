@@ -1,0 +1,21 @@
+{
+	"bucket":"http://toldvideo.s3.amazonaws.com/",
+	"box":false,
+	"gallery":[
+		{
+	
+			"video":"PractitionerProfile.mp4",
+			"poster":"slug.jpg"
+		},
+		{
+		
+			"video":"PractitionerProfile.mp4",
+			"poster":"slug.jpg"
+		},
+		{
+	
+			"video":"PractitionerProfile.mp4",
+			"poster":"slug.jpg"
+		}
+	]
+}

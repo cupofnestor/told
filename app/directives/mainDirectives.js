@@ -43,8 +43,6 @@ app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 	return {
 
 		templateUrl: './templates/gallery.html',
-	/*	transclude: true,
-		replace: true, */
 		scope: {
 			src: "="
 		},
@@ -59,20 +57,24 @@ app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 
 			$http({
 				method: 'GET',
-				url: "./config/"+$scope.src
+				url: "./config/gallery-"+$scope.src
 			}).then(function(result) {
-				$scope.bucket = result.data.bucket;
+				$scope.config = result.data;
+				
+
+				$scope.box_class = ($scope.config.box) ? "box" : "";
+				
 				console.log("result",result);
-				var gallery = result.data.gallery;
-				gallery.forEach(function(d){
-					d.poster = $sce.trustAsResourceUrl($scope.bucket+d.poster);
+				
+				$scope.config.gallery.forEach(function(d){
+					d.poster = $sce.trustAsResourceUrl($scope.config.bucket+d.poster);
 					d.sources = [
-						{src: $sce.trustAsResourceUrl($scope.bucket+d.video), type: "video/mp4"}
+						{src: $sce.trustAsResourceUrl($scope.config.bucket+d.video), type: "video/mp4"}
 					]
 					
 				})
 				console.log("GAllery ::", gallery);
-				$scope.gallery = gallery;
+				
 				
 			}, function(result) {
 				alert("Error: No data returned");

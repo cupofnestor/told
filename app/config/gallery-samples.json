@@ -1,6 +1,7 @@
 {
 	"bucket":"http://toldvideo.s3.amazonaws.com/",
 	"box":true,
+	"title":"Samples",
 	"gallery":[
 		{
 			"title":"Practitioners",
