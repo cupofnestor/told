@@ -34,6 +34,11 @@ app.directive('toldFooter', function() {
 ////
 
 
+
+
+
+
+
 app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 	return {
 
@@ -49,18 +54,26 @@ app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 			$scope.getVidSrc = function(vid){
 				return $sce.trustAsResourceUrl($scope.bucket+vid);
 			};
-			$scope.trustHTML = function(html) {
-			          return $sce.trustAsHtml(html);
-			        };
+		
 			console.log($scope.src);
 
 			$http({
 				method: 'GET',
 				url: "./config/"+$scope.src
 			}).then(function(result) {
-				console.log("result",result);
-				$scope.gallery = result.data.gallery;
 				$scope.bucket = result.data.bucket;
+				console.log("result",result);
+				var gallery = result.data.gallery;
+				gallery.forEach(function(d){
+					d.poster = $sce.trustAsResourceUrl($scope.bucket+d.poster);
+					d.sources = [
+						{src: $sce.trustAsResourceUrl($scope.bucket+d.video), type: "video/mp4"}
+					]
+					
+				})
+				console.log("GAllery ::", gallery);
+				$scope.gallery = gallery;
+				
 			}, function(result) {
 				alert("Error: No data returned");
 			});

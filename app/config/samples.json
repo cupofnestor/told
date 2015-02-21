@@ -1,35 +1,42 @@
 {
 	"bucket":"http://toldvideo.s3.amazonaws.com/",
+	"box":true,
 	"gallery":[
 		{
 			"title":"Practitioners",
 			"body":"Why should potential clients trust you with their care? Why do you practice in your field? Let a video profile show you are and answer commonly-asked questions. Alternatively, a video series can provide health and nutrition tips as a bonus service to your customers.", 
-			"video":"PractitionerProfile.mp4"
+			"video":"PractitionerProfile.mp4",
+			"poster":"slug.jpg"
 		},
 		{
 			"title":"Artisans",
 			"body":"Your process for creating art is unique – so show the world what you do! Use a profile video to explain your process and the love you put into each piece you create. <br/>Tell us about your passion. We’ll do the rest.",
-			"video":"Healy_FinalLogoAndAudio_720.mp4"
+			"video":"Healy_FinalLogoAndAudio_720.mp4",
+			"poster":"slug.jpg"
 		},
 		{
 			"title":"Businesses",
 			"body":"At TOLD we understand the long hours and challenges that come with running a business. So why do you do it? Let clients connect with you and your story through a profile video of your company. <br/> A video series can answer commonly asked questions, provide tips or offer advice to customers visitng your website.",
-			"video":"ArtistProfile.mp4"
+			"video":"ArtistProfile.mp4",
+			"poster":"slug.jpg"
 		},
 		{
 			"title":"Non-profits",
 			"body":"Use a video at your annual event, or send one as a way of saying “thanks” at the end of each fundraising season. Create a series of short character profiles for social media. The options are endless. Let video show the difference you are making in the world.",
-			"video":"NonProfit.mp4"
+			"video":"NonProfit.mp4",
+			"poster":"slug.jpg"
 		},
 		{
 			"title":"Schools",
 			"body":"Stay relevant with a weekly campus news series, or tell prospective students why they should attend your school. Use a video to kick off a Capital Campaign, or record alumni memories to create an ongoing story archive. There are so many vibrant students and faculty members waiting to tell the world about your school - let them!",
-			"video":""
+			"video":"",
+			"poster":"slug.jpg"
 		},
 		{
 			"title":"Event Coverage",
 			"body":"Why put all that work into planning an event, only to have it forgotten weeks later? We have expandable event coverage services – from recording every detail, to filming the highlights throughout the event. A short video can capture the excitement of the moment so much more than photos can. Share it on social media and relive it all over again.",
-			"video":"EventCoverage.mp4"
+			"video":"EventCoverage.mp4",
+			"poster":"slug.jpg"
 		}
 	]
 }
