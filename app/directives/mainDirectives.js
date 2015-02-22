@@ -60,9 +60,8 @@ app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 				url: "./config/gallery-"+$scope.src
 			}).then(function(result) {
 				$scope.config = result.data;
-				
-
-				$scope.box_class = ($scope.config.box) ? "box" : "";
+			
+				$scope.bgcolor = $scope.config.bgcolor;
 				
 				console.log("result",result);
 				

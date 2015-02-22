@@ -1,11 +1,12 @@
 {
 	"carousel":[
+
 		{
 			"crumb":"Custom,",
-			"text":"Original, thoughtful storytelling for your brand."
+			"text":"Original, <strong>thoughtful</strong> storytelling for your brand."
 		},{
 				"crumb":"Compact ",
-				"text":"Get to the short of it <br> with professional online videos."
+				"text":"Get to the short of it <br> with <strong>professional</strong> online videos."
 		},
 		{
 			"crumb":"Video",

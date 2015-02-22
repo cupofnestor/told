@@ -82,11 +82,13 @@ hr {
     border-color: #999999;
 }
 
+
 .box {
     margin-bottom: 20px;
-    padding: 30px 15px;
-    background: rgba(255,255,255,0.85);
+    padding: 30px 15px 0 15px;
+
 }
+
 
 .intro-text {
     text-transform: uppercase;
@@ -195,6 +197,8 @@ footer p {
     }
 }
 
+
+/*
 @media screen and (min-width:1200px) {
     .box:after {
         content: '';
@@ -202,7 +206,7 @@ footer p {
         clear: both;
     }
 }
-
+*/
 ////
 
 

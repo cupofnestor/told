@@ -1,21 +1,21 @@
 {
 	"bucket":"http://toldvideo.s3.amazonaws.com/",
-	"box":false,
+	"bgcolor":false,
 	"gallery":[
 		{
 	
-			"video":"PractitionerProfile.mp4",
-			"poster":"slug.jpg"
+			"video":"BusinessOwnerProfile.mp4",
+			"poster":"laila.png"
 		},
 		{
 		
-			"video":"PractitionerProfile.mp4",
+			"video":"HenryLee.mp4",
 			"poster":"slug.jpg"
 		},
 		{
 	
-			"video":"PractitionerProfile.mp4",
-			"poster":"slug.jpg"
+			"video":"yoga.mp4",
+			"poster":"courtneyyoga.png"
 		}
 	]
 }

@@ -1,7 +1,6 @@
 <div  class="brand">{{config.title}}</div>
-<div class ="row">
-	
-	<div ng-class ="box_class">
+<div class ="row" ng-class ="bgcolor">
+	<div class ="box" >
 		<div class = "col-md-4 col-md-offset-0" ng-repeat="item in config.gallery">
 			
 
@@ -12,7 +11,7 @@
 			                 >
 			        </vg-media>
 
-			        <vg-controls vg-autohide="true" vg-autohide-time="1000">
+			        <vg-controls vg-autohide="true" vg-autohide-time="2000">
 			            <vg-play-pause-button></vg-play-pause-button>
 			            <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
 			            <vg-scrub-bar>
