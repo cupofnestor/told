@@ -1,7 +1,15 @@
-angular.module('toldApp',['ngSanitize']);
+angular.module('toldApp',['ngSanitize',
+			"com.2fdevs.videogular",
+			"com.2fdevs.videogular.plugins.controls",
+			"com.2fdevs.videogular.plugins.overlayplay",
+			"com.2fdevs.videogular.plugins.poster"]);
 var app = angular.module('toldApp');
 app.controller('toldController', ['$scope', function($scope) {
   $scope.hello = 'Hola!';
+	$scope.vidconfig = {
+		theme: "bower_components/videogular-themes-default/videogular.css"
+		
+	}
 }]);
 /*
 

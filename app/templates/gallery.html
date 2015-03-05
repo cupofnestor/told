@@ -1,13 +1,36 @@
-<div  class="brand">Services</div>
-<div class ="row">
-	
-	<div class ="box">
-		<div class = "col-md-4 col-md-offset-0" ng-repeat="item in gallery">
-			<div class="embed-responsive embed-responsive-16by9">
-			  <video class="embed-responsive-item" src={{getVidSrc(item.video)}} controls="true"></video>
-			</div>
+<div  class="brand">{{config.title}}</div>
+<div class ="row" ng-class ="bgcolor">
+	<div class ="box" >
+		<div class = "col-md-4 col-md-offset-0" ng-repeat="item in config.gallery">
+			
+
+			
+			
+			<videogular vg-theme="controller.vidconfig.theme">
+			        <vg-media vg-src="item.sources"
+			                 >
+			        </vg-media>
+
+			        <vg-controls vg-autohide="true" vg-autohide-time="2000">
+			            <vg-play-pause-button></vg-play-pause-button>
+			            <vg-time-display>{{ currentTime | date:'mm:ss' }}</vg-time-display>
+			            <vg-scrub-bar>
+			                <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+			            </vg-scrub-bar>
+			            <vg-time-display>{{ timeLeft | date:'mm:ss' }}</vg-time-display>
+			            <vg-volume>
+			                <vg-mute-button></vg-mute-button>
+			                <vg-volume-bar></vg-volume-bar>
+			            </vg-volume>
+			            <vg-fullscreen-button></vg-fullscreen-button>
+			        </vg-controls>
+					<vg-poster vg-url='item.poster'></vg-poster>
+
+			        <vg-overlay-play></vg-overlay-play>
+			    </videogular>
+		
 			<h2>{{item.title}}</h2>
-			<hr>
+			<hr ng-hide="!item.title || !item.body">
 			<p ng-bind-html="item.body">
 				
 			</p>
