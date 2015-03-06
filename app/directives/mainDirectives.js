@@ -72,7 +72,6 @@ app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 					]
 					
 				})
-				console.log("GAllery ::", gallery);
 				
 				
 			}, function(result) {

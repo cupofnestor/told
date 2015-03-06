@@ -1,5 +1,5 @@
 {
-	"bucket":"http://toldvideo.s3.amazonaws.com/",
+	"bucket":"http://d73qy3hg17xcz.cloudfront.net/",
 	"bgcolor":false,
 	"gallery":[
 		{
@@ -10,7 +10,7 @@
 		{
 		
 			"video":"HenryLee.mp4",
-			"poster":"slug.jpg"
+			"poster":"henrylee.jpg"
 		},
 		{
 	
