@@ -19,9 +19,9 @@ app.directive('toldAbout', function() {
   };
 });
 
-app.directive('toldSamples', function() {
+app.directive('toldServices', function() {
   return {
-    templateUrl: './templates/samples.html'
+    templateUrl: './templates/services.html'
   };
 });
 
@@ -34,15 +34,12 @@ app.directive('toldFooter', function() {
 ////
 
 
-
-
-
-
-
 app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 	return {
 
 		templateUrl: './templates/gallery.html',
+	/*	transclude: true,
+		replace: true, */
 		scope: {
 			src: "="
 		},
@@ -52,28 +49,18 @@ app.directive('toldGallery', ['$http','$sce', function($http, $sce) {
 			$scope.getVidSrc = function(vid){
 				return $sce.trustAsResourceUrl($scope.bucket+vid);
 			};
-		
+			$scope.trustHTML = function(html) {
+			          return $sce.trustAsHtml(html);
+			        };
 			console.log($scope.src);
 
 			$http({
 				method: 'GET',
-				url: "./config/gallery-"+$scope.src
+				url: "./config/"+$scope.src
 			}).then(function(result) {
-				$scope.config = result.data;
-			
-				$scope.bgcolor = $scope.config.bgcolor;
-				
 				console.log("result",result);
-				
-				$scope.config.gallery.forEach(function(d){
-					d.poster = $sce.trustAsResourceUrl($scope.config.bucket+d.poster);
-					d.sources = [
-						{src: $sce.trustAsResourceUrl($scope.config.bucket+d.video), type: "video/mp4"}
-					]
-					
-				})
-				
-				
+				$scope.gallery = result.data.gallery;
+				$scope.bucket = result.data.bucket;
 			}, function(result) {
 				alert("Error: No data returned");
 			});
