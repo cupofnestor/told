@@ -1,0 +1,21 @@
+{
+	"bucket":"http://d73qy3hg17xcz.cloudfront.net/",
+	"bgcolor":false,
+	"gallery":[
+		{
+	
+			"video":"BusinessOwnerProfile.mp4",
+			"poster":"laila.png"
+		},
+		{
+		
+			"video":"HenryLee.mp4",
+			"poster":"henrylee.jpg"
+		},
+		{
+	
+			"video":"yoga.mp4",
+			"poster":"courtneyyoga.png"
+		}
+	]
+}

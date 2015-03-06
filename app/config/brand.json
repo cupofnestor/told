@@ -1,21 +1,19 @@
 {
 	"carousel":[
+
 		{
-			"image":"./img/brand/1.jpg",
-			"caption":"Wipe that fucking smirk off your face."
+			"crumb":"Custom,",
+			"text":"Original, <strong>thoughtful</strong> storytelling for your brand."
+		},{
+				"crumb":"Compact ",
+				"text":"Get to the short of it <br> with <strong>professional</strong> online videos."
 		},
 		{
-			"image":"./img/brand/2.jpg",
-			"caption":"Mmmm....  Beeeeeer."
-		},
-		{
-			"image":"./img/brand/3.jpg",
-			"caption":"Everyone knows that time is Death, that Death hides in clocks."
-		},
-		{
-			"image":"./img/brand/4.jpg",
-			"caption":"I am so fucking smooth..."
+			"crumb":"Video",
+			"text":"<strong>Media production</strong> <br> from consultation to final delivery."
 		}
+		
+	
 		
 	]
 }
